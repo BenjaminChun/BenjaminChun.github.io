@@ -97,7 +97,9 @@ header {
     color:aqua;
     text-decoration: underline;
 }
-
+.ongoing{
+    cursor: default;
+}
 button{
     margin-left: auto;
     padding: 9px 25px;
@@ -198,7 +200,7 @@ button:hover{
     font-size:2rem;
     background: cadetblue;
     transition:background 0.3s ease-out;
-    
+    cursor: default;
 }
 .btn-show-all:hover{
     background: aqua;
