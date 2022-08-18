@@ -200,10 +200,13 @@ button:hover{
 }
 .code{
     color: #45567d;
+    opacity: 0.0;
     transition: color 0.3s ease-out;
+    transition: opacity 0.3s;
 }
 .project:hover .code{
     color: aqua;
+    opacity: 1;
 }
 .project-image{
     height: calc(100%-6.8rem);
@@ -223,7 +226,6 @@ button:hover{
     font-size:2rem;
     background: cadetblue;
     transition:background 0.3s ease-out;
-    cursor: default;
 }
 .btn-show-all:hover{
     background: aqua;
