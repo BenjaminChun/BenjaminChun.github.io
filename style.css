@@ -157,6 +157,10 @@ button:hover{
     text-align: center;
     padding: 10rem 2rem;
     background-color: #45567d;
+    background-image: url(./img/project-grid.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
 }
 
 .projects-section-header{
