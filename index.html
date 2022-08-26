@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>Ben's Profile</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style2.css">
         <header>
             <a href="#welcome-section" class="logo-container">
                 <img src="img/logo2.png" class="logo" alt="logo">
@@ -17,8 +17,9 @@
                     <a href="#contact"><button>CONTACT</button></a>
                 </ul>
             </nav>
-            
         </header>
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     </head>
     <body>
         <section id="welcome-section" class="welcome-section">
@@ -30,7 +31,7 @@
             <h2 class="projects-section-header">
                 These are my projects
             </h2>
-            <div class="projects-grid">
+            <div class="carousel">
                 <a href="https://gitlab.com/BenjaminChun/kong-keycloak" target="_blank" class="project project-tile">
                     <img class="project-image resize-img" src="/img/kong-eg.png" alt="project"/>
                     <p class="project-title">
@@ -111,10 +112,6 @@
                         <span class="code">&#47;&gt;</span>
                     </p>
                 </a>
-                
-                
-                
-                
             </div>
             <a href="https://github.com/BenjaminChun" class="btn btn-show-all" target="_blank">Check out my Github</a>
         </section>
@@ -131,4 +128,16 @@
             </div>
         </section>
     </body>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.carousel').slick({
+            slidesToShow: 3,
+            dots:true,
+            centerMode: true,
+            });
+            });
+      </script>
 </html>

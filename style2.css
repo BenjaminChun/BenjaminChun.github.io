@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
 }
-
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
@@ -131,6 +130,8 @@ button:hover{
     color: aqua;
 }
 
+
+/* =================WELCOME SECTION================= */
 .welcome-section{
     display:flex;
     flex-direction: column;
@@ -152,9 +153,12 @@ button:hover{
     color: aqua;
 }
 
-/*Projects section*/
+
+
+/*==============Projects section===================*/
 
 .projects-section {
+    height: 100vh;
     text-align: center;
     padding: 10rem 2rem;
     background-color: #45567d;
@@ -176,7 +180,21 @@ button:hover{
     }
 }
 
-.projects-list{
+.carousel{
+    width: 90%;
+    height: 50vh;
+    margin: 0 auto;
+}
+.slick-slide{
+    margin:10px;
+}
+.slick-slide img{
+    width:100%;
+    border: 2px solid #fff;
+}
+.wrapper .slick-dots li button:before {
+    font-size:20px;
+    color:white;
 }
 
 @media (max-width:30.625em){
@@ -188,10 +206,10 @@ button:hover{
     }
 }
 
-.project{
+/* .project{
     box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
     border-radius: 2px;
-}
+} */
 .code{
     color: #45567d;
     opacity: 0.0;
