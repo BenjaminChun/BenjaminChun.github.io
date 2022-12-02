@@ -10,9 +10,7 @@ html{
     scroll-behavior: smooth;
     background-color: #45567d;
 }
-.animate__animated.animate__backInUp{
-    --animate-duration: 2s;
-}
+
 .loader-wrapper{
     z-index: 2; /*Add this*/
     width: 100%;
