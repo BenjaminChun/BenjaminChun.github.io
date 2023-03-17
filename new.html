@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="./particle.css">
     </head>
     <body>
-        <nav style="background-color: #191d1e; height: 50px; display: flex; align-items: center; position: sticky; top: 0px; border: solid 2px #fff; border-bottom: none; justify-content: space-between;">
+        <nav style="background-color: #191d1e; height: 50px; display: flex; align-items: center; position: sticky; top: 0px; border: solid 2px #fff; border-bottom: none; justify-content: space-between; z-index: 12;">
             <div>
                 <a href="#about" style="margin: 20px; color: #ccc; text-decoration: none;">About</a>
                 <a href="#skills" style="margin: 20px;  color: #ccc; text-decoration: none">Skills</a>
@@ -22,6 +22,20 @@
             <h2 style="color: #ddd;">
                 <span id="typed3"></span>
             </h2>
+        </section>
+        <section id="about" style="height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; z-index: 10; position: relative; color: #fff; padding: 20px; border: solid 2px #fff;">
+            <h2>About</h2>
+            <div class="content" style="display: flex;">
+                <p style="margin-right: 10px; color: #ddd;">
+                    lorem ipsum
+                </p>
+                <div>
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/linkedin/linkedin-original.svg" alt="Linkedin" width="40px" height="40px">
+                    <img src="./img/github-inverse.png" alt="Github" height="40px" width="40px" style="background-color: transparent;">
+                </div>
+            </div>
+            
+
         </section>
         <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
