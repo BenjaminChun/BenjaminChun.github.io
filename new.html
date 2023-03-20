@@ -21,13 +21,13 @@
                 <img src="https://flaticons.net/icon.php?slug_category=mobile-application&slug_icon=close" alt="" style="height: 34px; border-left: solid 1px #fff; border-right: solid 1px #fff; padding: 3px;">
             </div>
         </nav>
-        <section id="welcome" style="height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 10; position: relative; color: #fff; border-left: solid 1px #fff; border-right: solid 1px #fff;">
+        <section id="welcome" style="height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 10; position: relative; color: #fff; border-left: solid 1px #fff; border-right: solid 1px #fff; ">
             <h1 style="font-size: 2.5em;">hi, i'm benjamin</h1>
             <h3 style="color: #ddd;">
                 <span id="typed3"></span>
             </h2>
         </section>
-        <section id="about" style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start; z-index: 10; position: relative; color: #fff; padding: 20px; border-left: solid 1px #fff; border-right: solid 1px #fff;">
+        <section id="about" style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start; z-index: 10; position: relative; color: #fff; padding: 20px; border-left: solid 1px #fff; border-right: solid 1px #fff; padding: 0% 10% 0% 10%;">
             <h2>About</h2>
             <div class="content" style="display: flex; flex-direction: column; align-items: center;">
                 <p style="margin-right: 10px; color: #ddd;">
@@ -41,7 +41,7 @@
                 </div>
             </div>
         </section>
-        <section id="skills" style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start; z-index: 10; position: relative; color: #fff; padding: 20px; border-left: solid 1px #fff; border-right: solid 1px #fff;">
+        <section id="skills" style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start; z-index: 10; position: relative; color: #fff; padding: 20px; border-left: solid 1px #fff; border-right: solid 1px #fff; padding: 0% 10% 0% 10%;">
             <h2>Skills</h2>
             <div class="content">
                 <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/python/python-original-wordmark.svg" title="Python" alt="Python" width="40" height="40"/>&nbsp;
@@ -62,23 +62,41 @@
                 <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/java/java-original-wordmark.svg" title="Java" alt="Java" width="40" height="40"/>&nbsp;
             </div>
         </section>
-        <section id="experience" style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start; z-index: 10; position: relative; color: #fff; padding: 20px; border: solid 1px white; border-top: none;">
+        <section id="experience" style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start; z-index: 10; position: relative; color: #fff; padding: 20px; border: solid 1px white; border-top: none; padding: 0 10% 0 10%;">
             <h2>Experience</h2>
-            <div>
-                <button>./work</button>
-                <button>./proj</button>
+            <div style="align-self: center; width: 80%; display: flex; flex-direction: row; justify-content: space-evenly; align-items: center;">
+                <button onclick="toggleDiv(event)" id="work" class="selected" style="padding: 0; border: none;background: none; width: 100%; ">./work</button>
+                <button onclick="toggleDiv(event)" id="proj" class="unselected" style="padding: 0; border: none;background: none; width: 100%;">./proj</button>
             </div>
-            <div class="timeline">
-                <div class="timeline-element">
-                    <span>logo</span>
-                    <div class="content">
-                        <div class="titles">
-                            <p>Company Name</p>
-                        <p>Job Title</p>
+            <div id="work-timeline" class="">
+                <div class="timeline">
+                    <div class="time-element" style="display: flex;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZdy_fZLgeYZjVORtqRlebyUWCgQdujhGTyPb9B3U&s" alt="Creative" style="border-radius: 100px; border: 4px solid white; height: 100px;">
+                        <div class="content">
+                            <div class="titles">
+                                <p>Creative Technology</p>
+                            <p>Web Developer Intern</p>
+                            </div>
+                            <div class="exp-content">
+                                <p>Roles and Responsibilities</p>
+                                <p>Jul 2022 - Dec 2022</p>
+                            </div>
                         </div>
-                        <div class="exp-content">
-                            <p>Roles and Responsibilities</p>
-                            <p>date</p>
+                    </div>
+                </div>
+            </div>
+            <div id="proj-timeline" class="hidden">
+                <div class="timeline">
+                    <div class="time-element" style="display: flex;">
+                        <img src="./img/lumberjack.jpg" alt="Lumberjack" style="border-radius: 100px; border: 4px solid white; height: 100px; width: 100px;">
+                        <div class="content">
+                            <div class="titles">
+                                <p>Lumberjack Hack</p>
+                            </div>
+                            <div class="exp-content">
+                                <p>Roles and Responsibilities</p>
+                                <p>Jul 2022 - Dec 2022</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -102,5 +120,6 @@
         </script>
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="./new.js"></script>
     </body>
 </html>
