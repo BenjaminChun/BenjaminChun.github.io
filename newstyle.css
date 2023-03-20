@@ -1,4 +1,33 @@
 /* mobile first */
+.active{
+    color: white !important; 
+    text-decoration: none !important;
+}
+.nav-links{
+    margin: 20px; 
+    color: #aaa; 
+    text-decoration: none;
+}
+/* .bounce{
+    animation: bounce;
+    animation-duration: 2s;
+} */
+
+.bounceInRight{
+    animation: bounceInRight;
+    animation-duration: 2s;
+}
+
+.fadeInUp{
+    animation: fadeInUp;
+    animation-duration: 1s;
+    animation-delay: 10ms;
+}
+
+.hidden{
+    display: none;
+}
+
 .timeline:before{
     content: "";
     position: absolute;
@@ -6,6 +35,21 @@
     width: 4px;
     background: white;
     max-height: -webkit-fill-available;
+    left: 50px;
+    z-index: 0;
+}
+
+.timeline{
+    position: relative;
+}
+
+.time-content{
+    padding: 0 0 0 20px;
+}
+.time-element{
+    display: flex; 
+    position: relative; 
+    padding: 20px 0 20px 0;
 }
 
 .selected {
