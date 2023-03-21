@@ -2,12 +2,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <canvas id="projector" style="z-index: 0; position: fixed; top: 0; left: 0;">Your browser does not support the Canvas element.</canvas>
     <head>
-        <title>BChun</title>
+        <title>Benjamin Chun</title>
         <link rel="stylesheet" href="./particle.css">
         <link rel="stylesheet" href="./newstyle.css">
         <!-- Latest compiled and minified CSS -->
         <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Mono&family=Comfortaa&family=Roboto+Mono:wght@300&family=IBM+Plex+Mono&display=swap" rel="stylesheet">
         <nav style="background-color: #191d1e; height: 50px; display: flex; align-items: center; position: sticky; top: 0px; border: solid 2px #fff; justify-content: space-between; z-index: 12;" id="nav-bar">
             <div>
                 <a href="#about" class="nav-links">About</a>
@@ -23,15 +26,15 @@
     </head>
     <body style="height: auto;">
         <section id="welcome" style="height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 10; position: relative; color: #fff; border-left: solid 1px #fff; border-right: solid 1px #fff;">
-            <h1 style="font-size: 2.5em;">hi, i'm benjamin</h1>
-            <h3 style="color: #ddd;">
+            <h1 style="font-size: 2.5em;font-family: 'PT Mono', monospace;">hi, i'm benjamin</h1>
+            <h3 style="color: var(--grey-dull);font-family: 'Roboto Mono', monospace;">
                 <span id="typed3"></span>
             </h2>
         </section>
         <section id="about" class="container" style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start; z-index: 10; position: relative; color: #fff; padding: 20px; border-left: solid 1px #fff; border-right: solid 1px #fff; padding: 50px 10% 0% 10%;">
             <h2>About</h2>
             <div class="content" style="display: flex; flex-direction: column; align-items: center;">
-                <p style="margin-right: 10px; color: #ddd;">
+                <p style="margin-right: 10px; color: var(--grey-dull);">
                     I am a Computer Science student studying in Nanyang Technological University and I am currently in my third year. I describe myself as someone who is passionate about learning new and interesting things, someone who is unusually entertained by random facts like how dolphins might be the most sadistic animal.
                     I spend my free time working on useless things like learning more fun facts and keeping my streak of daily leetcode challenges. I am hoping to compete in one of the bi-weekly contests to see how I fare against competitive programmers.
                 </p>
@@ -63,7 +66,7 @@
                 <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/java/java-original-wordmark.svg" title="Java" alt="Java" width="40" height="40"/>&nbsp;
             </div>
         </section>
-        <section id="experience" class="container" style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start; z-index: 10; position: relative; color: #fff; padding: 20px; border: solid 1px white; border-top: none; padding: 50px 10% 0 10%;">
+        <section id="experience" class="container" style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start; z-index: 10; position: relative; color: #fff; padding: 20px; border: solid 1px white; border-top: none; padding: 50px 10% 25px 10%;">
             <h2>Experience</h2>
             <div style="align-self: center; width: 100%; display: flex; flex-direction: row; justify-content: space-evenly; align-items: center; padding: 10px 0 20px 0;" class="content">
                 <button onclick="toggleDiv(event)" id="work" class="selected" style="padding: 0; border: none;background: none; width: 100%; ">./work</button>
@@ -86,8 +89,8 @@
                                     <li>Created product page based on designer’s mockup. Made use of HTML, CSS and Bootstrap create responsive view for mobile, tablet and desktop views.</li>
                                     <li>Designed internal tool using low-code tool (appsmith) reducing 30% of time spent on edits to internal database</li>
                                 </ul>
-                                <p>Jul 2022 - Dec 2022</p>
                             </div>
+                            <p class="date">Jul 2022 - Dec 2022</p>
                         </div>
                     </div>
                     <div class="time-element">
@@ -105,8 +108,8 @@
                                     <li>Sieved through Open Source for Kong-OIDC to retrieve relevant configuration for team’s use case.</li>
                                     <li>Experienced Virtual Machines and Ubuntu Linux.</li>
                                 </ul>
-                                <p>May 2022 - Jul 2022</p>
                             </div>
+                            <p class="date">May 2022 - Jul 2022</p>
                         </div>
                     </div>
                 </div>
@@ -170,6 +173,9 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <section id="footer" style="background-color: #191d1e; color: #ddd; display: flex; justify-content: center; border: solid 1px white; border-top: none; padding: 10px;">
+            <h3>developed and designed by me</h3>
         </section>
         <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>

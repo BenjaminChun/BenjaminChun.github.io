@@ -84,17 +84,29 @@ window.addEventListener( "scroll", function () {
 } );
 
 let options = {
-    threshold: 0.1
+    threshold: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1]
 }
 
 const observer = new IntersectionObserver(function(entries) {
         entries.forEach(entry=>{
-            // console.log(entry.target.className)
+            console.log(entry.target.className)
             if (entry.isIntersecting){
-                    entry.target.classList.add("fadeInUp")
+                    // console.log(entry.intersectionRatio)
+                    if (entry.target.classList.contains("time-element")){
+                        entry.target.classList.add("fadeInUp")
+                    }
+                    else if (!entry.target.classList.contains("fadeIn")){entry.target.classList.add("fadeIn")}
+                    
                 }
-            else{
-                entry.target.classList.remove("fadeInUp")
+            else if (!entry.isIntersecting){
+                // console.log(entry.intersectionRatio)
+                if (entry.target.classList.contains("time-element")){
+                    // entry.classList.remove("fadeInUp")
+                }
+                else if (entry.target.classList.contains("fadeIn")){
+                    entry.target.classList.remove("fadeIn")
+                }
+                
             }
                 // // else{
                 // //     entry.target.classList.remove("bounceInRight")
