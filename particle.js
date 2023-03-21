@@ -119,7 +119,7 @@ var ParticleEngine = (function() {
 
 		function fadeout(ball, speed)
 		{
-			ball.speed = range(2, 10);
+			ball.speed = range(10, 40);
 			TweenMax.to(ball, speed/2, {alpha:0 });
 		}
 
