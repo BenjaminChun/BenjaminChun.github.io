@@ -1,0 +1,103 @@
+:root{
+    --grey-dull:#bfbfbf;
+    --grey-neutral:#929AAB;
+    --grey-dark:#404040;
+    --black:#333;
+    --black2:#393E46;
+}
+h2{
+    font-family: 'Roboto Mono', monospace;
+}
+p,h3,button{
+    font-family: 'IBM Plex Mono', monospace;
+}
+ul{
+    font-family: 'Comfortaa', cursive;
+}
+/* mobile first */
+.active{
+    color: white !important; 
+    text-decoration: none !important;
+}
+.nav-links{
+    margin: 20px; 
+    color: var(--grey-neutral); 
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+}
+/* .bounce{
+    animation: bounce;
+    animation-duration: 2s;
+} */
+
+.bounceInRight{
+    animation: bounceInRight;
+    animation-duration: 2s;
+}
+
+.fadeInUp{
+    animation: fadeInUp;
+    animation-duration: 1s;
+    animation-delay: 10ms;
+}
+.fadeIn{
+    animation: fadeIn;
+    animation-duration: 1s;
+}
+.hidden{
+    display: none;
+}
+
+.timeline:before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    background: white;
+    max-height: -webkit-fill-available;
+    left: 50px;
+    z-index: 0;
+}
+
+.timeline{
+    position: relative;
+}
+.exp-content{
+    color: var(--grey-dull);
+}
+.date{
+    color: #F7F7F7;
+}
+.time-content{
+    padding: 0 0 0 20px;
+}
+.time-element{
+    display: flex; 
+    position: relative; 
+    padding: 20px 0 20px 0;
+}
+
+.selected {
+    border-bottom: 1px solid white !important;
+    color: white
+}
+.unselected{
+    border-bottom: 1px solid var(--grey-neutral) !important;
+    color: var(--grey-neutral)  ;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+  
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
